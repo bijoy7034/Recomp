@@ -9,11 +9,10 @@ export default {
   argTypes: {
     label: { 
       description: 'The text to display on the button', 
-      defaultValue: { summary: 'Click Me' }
+      defaultValue:  'Click Me' 
     },
     onClick: { 
-      description: 'Callback function to trigger on button click', 
-      action: 'clicked'  
+      description: 'Callback function to trigger on button click',  
     },
     type: {
       description: "You can change the color",

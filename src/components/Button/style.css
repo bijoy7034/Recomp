@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 .recomp_button {
+    font-family: Quicksand;
     color: white;
     border-radius: 5px;
     min-width: 70px;
