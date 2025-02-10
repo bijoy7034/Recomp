@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.recomp-badge{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 5px 10px;
+    font-size: x-small;
+    border-radius: 30px;
+}
+
+.recomp-badge.danger{
+    background-color: rgb(223, 63, 63);
+}
+
+.recomp-badge.success {
+    background-color: rgb(29, 182, 29);
+}
+.recomp-badge.warning{
+    background-color: rgb(233, 213, 60);
+}

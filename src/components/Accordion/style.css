@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.recomp-accordion {
+  width: 100%;
+  width: 700px;
+  margin-bottom: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); 
+}
+
+.recomp-accordion-item {
+  margin-bottom: 10px;
+}
+
+.recomp-accordion-header {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+.recomp-accordion-header:hover {
+  background-color: #f1f1f1;
+}
+
+.accordion-title {
+  color: #333;
+  font-size: 16px;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease-in-out;
+  font-size: 18px; /* Adjust icon size */
+  color: #333; /* Set icon color */
+}
+
+.accordion-icon.open {
+  transform: rotate(180deg);
+}
+
+.recomp-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 12px;
+  transition: max-height 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+}
+
+.recomp-accordion-content.open {
+  max-height: 500px; /* Adjust as needed */
+  padding-top: 12px;
+}
+
+.accordion-body {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.accordion-topic {
+  margin-bottom: 12px;
+}
+
+.accordion-topic p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Add styling for the accordion icon */
+.recomp-accordion-header .accordion-icon {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recomp-accordion {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .recomp-accordion-item {
+    margin-bottom: 8px;
+  }
+
+  .recomp-accordion-header {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .accordion-body {
+    font-size: 13px;
+  }
+}

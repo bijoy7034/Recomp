@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.recomp-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.recomp-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-checkmark {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #3d3d3d;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: background 0.2s ease-in-out;
+}
+
+.recomp-radio input:checked + .radio-checkmark {
+  background-color: #000000;  
+  border: 2px solid #000000; 
+}
+
+.recomp-radio input:checked + .radio-checkmark::after {
+  content: none; 
+}
+
+.recomp-radio.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

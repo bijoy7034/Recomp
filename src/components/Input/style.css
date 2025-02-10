@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.recomp-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: Quicksand;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.recomp-input {
+    width: 100%;
+    max-width: 800px;
+    min-width: 400px;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container:has(.input-icon) .recomp-input {
+    min-width: 380px;
+}
+.input-container .input-icon + .recomp-input {
+    padding-left: 2.5rem;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    font-size: 1.2rem;
+    color: #00000078;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Error icon position */
+.input-icon-error {
+    position: absolute;
+    right: 12px;
+    font-size: 1.2rem;
+    color: rgb(205, 54, 54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recomp-input:focus {
+    border-color: #0b0b0b;
+    box-shadow: 0 0 5px rgba(24, 24, 24, 0.5);
+}
+
+.recomp-input.error {
+    border-color: rgb(205, 54, 54);
+}
+
+/* Error message styles */
+.error-message {
+    color: rgb(205, 54, 54);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 4px;
+    max-width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    min-height: 18px;
+}
+
+.error {
+    color: rgb(205, 54, 54);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 4px;
+    max-width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+    .recomp-input {
+        max-width: 100%;
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+        height: 38px; 
+    }
+}

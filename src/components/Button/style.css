@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.recomp_button {
+    font-family: Quicksand;
+    color: white;
+    border-radius: 5px;
+    min-width: 70px;
+    padding: 10px 15px;
+    border: none;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;  /* Smooth transition for hover effect */
+}
+
+.recomp_button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.recomp_button.primary {
+    background-color: rgb(30, 30, 30);  
+}
+
+.recomp_button.light {
+    background-color: rgb(228, 228, 228); 
+    color: black;
+}
+
+.recomp_button.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.recomp_button.l{
+    min-width: 100px;
+    height: 40px;
+}
+.recomp_button.xl{
+    min-width: 120px;
+    height: 40px;
+}
+.recomp_button.s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    height: 25px;
+    font-size: x-small;
+}
+
+.recomp_button.danger{
+    background-color: rgb(223, 63, 63);
+}
+
+.recomp_button.success {
+    background-color: rgb(29, 182, 29);
+}
+.recomp_button.warning{
+    background-color: rgb(233, 213, 60);
+}
