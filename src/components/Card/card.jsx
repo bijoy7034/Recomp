@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "./style.css";
+import "./card.css";
 
 const RecompCard = ({ title, description, footer, actions }) => {
   return (

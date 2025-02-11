@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "./style.css";
+import "./input.css";
 import { Info } from "@mui/icons-material";
 
 const RecompInput = ({ 

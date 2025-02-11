@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import './style.css'
+import './button.css'
 const RecompButton = ({
     label,
     onClick,

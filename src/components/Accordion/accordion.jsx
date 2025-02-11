@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useState } from "react";
-import "./style.css";
+import "./accordion.css";
 
 const RecompAccordion = ({
   data,

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "./style.css";
+import "./switch.css";
 
 const RecompSwitch = ({ checked, onChange, disabled, size }) => {
   return (

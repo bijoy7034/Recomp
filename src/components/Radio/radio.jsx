@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "./style.css";
+import "./radio.css";
 
 const RecompRadio = ({ label, checked, onChange, disabled, name, value }) => {
   return (
