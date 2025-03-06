@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@500&display=swap');
+
+* {
+  font-family: 'Quicksand';
+}
+
+.menu-button.primary {
+  background-color: rgb(28, 28, 28);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 5px 14px;
+  cursor: pointer;
+  min-width: 30px;
+  width: fit-content;
+  font-size: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu-button.primary:hover {
+  background-color: rgb(49, 49, 49);
+}
+
+.menu-button.secondary {
+  background-color: white;
+  color: black;
+  border: solid 0.03px black;
+  border-radius: 6px;
+  padding: 5px 14px;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu-button.secondary:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.menu-popover.primary {
+  background-color: rgba(0, 0, 0, 0.919);
+  color: white;
+  padding: 6px;
+  font-size: 6px;
+  min-width: 8rem;
+  border-radius: 8px;
+  width: fit-content;
+  position: relative;
+}
+
+.menu-popover.secondary {
+  background-color: white;
+  color: black;
+  border: solid 0.03px rgba(0, 0, 0, 0.429);
+  font-size: 6px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.036);
+  min-width: 8rem;
+  position: relative;
+}
+.menu-popover.primary:hover{
+  outline: none !important;
+}
+.menu-list {
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.menu-item.primary {
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.menu-item.secondary {
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.menu-item.primary:hover{
+  background-color: rgba(80, 80, 80, 0.756);
+} 
+.menu-item.secondary:hover {
+  background-color: rgba(0, 0, 0, 0.103);
+}
+
+.menu-icon {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+.menu-button:focus,
+.menu-item:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

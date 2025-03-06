@@ -1,0 +1,37 @@
+{
+  "name": "recomp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "author": "Bijoy Anil",
+  "license": "MIT",
+  "dependencies": {
+    "@react-aria/example-theme": "^1.0.5",
+    "react": "^19.0.0",
+    "react-aria-components": "^1.6.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-spinners": "^0.15.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.5",
+    "@storybook/addon-essentials": "^8.6.3",
+    "@storybook/addon-onboarding": "^8.6.3",
+    "@storybook/blocks": "^8.6.3",
+    "@storybook/experimental-addon-test": "^8.6.3",
+    "@storybook/react": "^8.6.3",
+    "@storybook/react-vite": "^8.6.3",
+    "@storybook/test": "^8.6.3",
+    "@vitest/browser": "^3.0.7",
+    "@vitest/coverage-v8": "^3.0.7",
+    "playwright": "^1.50.1",
+    "prop-types": "^15.8.1",
+    "storybook": "^8.6.3",
+    "vitest": "^3.0.7"
+  }
+}

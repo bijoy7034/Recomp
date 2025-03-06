@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@500&display=swap');
+
+* {
+  font-family: 'Quicksand';
+}
+
+
+.recomp-button {
+    background-color: rgb(28, 28, 28);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    min-width: 90px;
+    font-size: 13px;
+}
+
+.recomp-button:hover {
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+.recomp-button.primary {
+    background-color: rgb(28, 28, 28);
+}
+
+.recomp-button.secondary {
+    background-color: rgb(255, 255, 255);
+    border: solid 0.03px black;
+    color: black;
+}
+
+.recomp-button.secondary:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+.recomp-button[data-disabled] {
+    background-color: rgb(200, 200, 200) !important;
+    color: rgb(150, 150, 150) !important;
+    cursor: not-allowed;
+}
+
+.recomp-button.primary[data-disabled] {
+    background-color: rgb(220, 220, 220) !important;
+    color: rgb(120, 120, 120) !important;
+}
+
+.recomp-button.secondary[data-disabled] {
+    background-color: rgb(240, 240, 240) !important;
+    color: rgb(180, 180, 180) !important;
+    border-color: rgb(200, 200, 200);
+}
+
+
+.recomp-button .icon {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+.recomp-button .loader {
+    width: 10px;
+    height: 10px;
+}

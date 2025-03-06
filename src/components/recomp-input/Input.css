@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300&display=swap");
+* {
+  font-family: "Quicksand";
+}
+
+.react-aria-TextField {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-recomp {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.react-aria-Input,
+.react-aria-TextArea {
+  padding: 0.386rem;
+  padding-left: 0.65rem;
+  margin: 0;
+  border: solid 0.03px rgba(0, 0, 0, 0.333);
+  border-radius: 5px;
+  background: transparent;
+  font-size: 1rem;
+  color: black;
+
+  &::placeholder {
+    color: rgba(83, 83, 83, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400 !important;
+  }
+
+  &[data-focused] {
+    outline: 1px solid rgba(0, 0, 0, 0.627);
+    outline-offset: -1px;
+  }
+}
+
+.input-alert {
+  border: solid 0.7px rgb(193, 54, 54);
+}
+
+.description {
+  margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
+  color: rgb(151, 151, 151);
+  font-size: 0.7rem;
+}
+
+.description.alert {
+  color: rgb(193, 54, 54);
+  font-size: 0.8rem;
+}
