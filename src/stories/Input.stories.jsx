@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { RecompInput }from "../../index";
+import { RecompCheckbox, RecompInput }from "../../index";
 import { BiUser, BiLock } from "react-icons/bi";
 import RecompButton from "../components/recomp-button/Button";
 
@@ -132,6 +132,7 @@ export const LoginForm =  {
         onChange={handleChange("password")}
         required
       />
+      <RecompCheckbox label='Remember me'/>
       <RecompButton type="submit" label="Login" />
     </form>
   );
