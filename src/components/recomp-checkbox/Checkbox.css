@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@500&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.recomp-input-wrapper {
+    display: flex;
+    align-items: start;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.label-text {
+    color: rgb(22, 22, 22);
+    font-size: 0.9rem;
+
+}
+
+.description-text {
+    color: gray;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+
+.disabled {
+    color: rgb(73, 73, 73);
+    cursor: not-allowed;
+}
