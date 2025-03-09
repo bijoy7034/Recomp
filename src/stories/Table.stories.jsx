@@ -24,6 +24,7 @@ export default {
 };
 
 export const Default = {
+    tags: ["unstable"],
   args: {
     columns: ["Name", "Type", "Date"],
     rows: [
