@@ -1,0 +1,109 @@
+@import "@react-aria/example-theme";
+
+.react-aria-Table {
+  width: 100%;  
+  padding: 4px;
+  border-radius: 6px;
+  background: #ffffff; 
+  outline: none;
+  border-spacing: 0;
+  min-height: 100px;
+  align-self: start;
+  max-width: 100%;
+  word-break: break-word;
+  forced-color-adjust: none;
+  border-collapse: collapse;
+
+  &[data-focus-visible] {
+    outline: 1px solid black;
+    outline-offset: -1px;
+  }
+
+  .react-aria-TableHeader {
+    color: #5b5b5bb1; 
+
+    &:after {
+      content: '';
+      display: table-row;
+      height: 2px;
+    }
+
+    & tr:last-child .react-aria-Column {
+      border-bottom: 0.23px solid #0000003a;
+      cursor: default;
+    }
+  }
+
+  .react-aria-Row {
+    border-radius: 6px;
+    clip-path: inset(0 round 6px); 
+    outline: none;
+    cursor: default;
+    color: #333333;
+    font-size: 1.072rem;
+    position: relative;
+    transform: scale(1);
+    border-bottom: 0.23px solid #0000003a; 
+
+    &[data-focus-visible] {
+      outline: 1px solid #5a5a5a;
+      outline-offset: -2px;
+    }
+
+    &[data-pressed] {
+      background: #e0e0e0;
+    }
+
+    &[data-disabled] {
+      color: #b0b0b0;
+    }
+
+    /* Hover Effect */
+    &:hover {
+      background-color: #f1f1f1; /* Light gray */
+      transition: background-color 0.2s ease-in-out;
+    }
+  }
+
+  .react-aria-Cell,
+  .react-aria-Column {
+    padding: 8px;
+    text-align: left;
+    outline: none;
+
+    &[data-focus-visible] {
+      outline: 2px solid #007bff;
+      outline-offset: -2px;
+    }
+  }
+
+  .react-aria-Cell {
+    transform: translateZ(0);
+
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+  }
+  @supports selector(:has(.foo)) {
+    .react-aria-Row[data-selected]:has(+ [data-selected]),
+    .react-aria-Row[data-selected]:has(+ .react-aria-DropIndicator + [data-selected]) {
+      border-radius: 0;
+    }
+
+    .react-aria-Row[data-selected] + [data-selected],
+    .react-aria-Row[data-selected] + .react-aria-DropIndicator + [data-selected] {
+      border-radius: 0;
+    }
+  }
+}
+
+:where(.react-aria-Row) .react-aria-Checkbox {
+  --selected-color: #ffffff;
+  --selected-color-pressed: #ffffff;
+  --checkmark-color: #007bff;
+  --background-color: #007bff;
+}
