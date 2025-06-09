@@ -2,7 +2,9 @@
   "name": "@bijoy7034/recomp",
   "version": "1.0.0",
   "description": "Recomp is a modern, reusable, and customizable React component library designed for building scalable and accessible UI components. Built with React, Storybook, and TypeScript, Recomp provides a collection of well-structured, themeable, and highly interactive components to accelerate front-end development.",
-  "main": "index.js",
+  "main": "dist/recomp.cjs.js",      
+  "module": "dist/recomp.es.js",  
+  "types": "dist/index.d.ts",   
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
