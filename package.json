@@ -8,6 +8,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "Bijoy Anil",
   "license": "MIT",
   "dependencies": {
